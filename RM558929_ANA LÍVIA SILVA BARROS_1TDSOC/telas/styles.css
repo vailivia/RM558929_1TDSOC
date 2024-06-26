@@ -1,0 +1,102 @@
+:root {
+    --cor-de-fundo: #F2EEEB;
+    --laranja: #D95D41;
+    --marrom: #A66641;
+    --laranja-escuro: #be4024;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    text-align: center;
+}
+
+.logo__login {
+    padding-top: 100px;
+    width: 230px;
+    height: auto;
+}
+
+.banner__cadastro {
+    text-align: left;
+}
+
+.banner__cadastro__titulo {
+    color: var(--laranja);
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner__cadastro p {
+    color: var(--marrom);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+.btn__prosseguir-container{
+    text-align: center;
+}
+
+.btn__prosseguir {
+    background-color: var(--laranja);
+    border-radius: 24px;
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn__prosseguir:hover {
+    background-color: var(--laranja-escuro);
+    font-size: 15px;
+}
+
+.rec__senha {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--laranja);
+    margin-top: 15px;
+}
+
+.rec__senha a {
+    color: var(--laranja);
+}
+
+@media (max-width: 576px) {
+    .banner__cadastro {
+        padding: 10px;
+        margin: 0 30px 0 30px;
+    }
+    .logo__login {
+        width: 180px;
+        padding-top: 100px;
+    }
+    .banner__cadastro__titulo {
+        font-size: 18px;
+    }
+    .btn__prosseguir {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .banner__cadastro {
+        padding: 15px;
+    }
+    .logo__login {
+        width: 200px;
+        padding-top: 75px;
+    }
+    .banner__cadastro__titulo {
+        font-size: 20px;
+    }
+    .btn__prosseguir {
+        font-size: 15px;
+    }
+}
